@@ -1,0 +1,211 @@
+{
+  "nav": {
+    "home": "Início",
+    "services": "Serviços",
+    "about": "Sobre Nós",
+    "contact": "Contacto",
+    "contactCta": "Contactar"
+  },
+  "hero": {
+    "eyebrow": "🌍 Empresa Angolana de Confiança",
+    "title1": "Soluções Completas para",
+    "title2": "O Seu Negócio",
+    "description": "Da agricultura à restauração, das obras públicas ao comércio — a FICHE oferece serviços integrados com qualidade e compromisso para empresas e particulares em Angola.",
+    "primaryCta": "Ver Os Nossos Serviços →",
+    "secondaryCta": "Sobre a FICHE",
+    "stat1Value": "15+",
+    "stat1Label": "Anos de Experiência",
+    "stat2Value": "250+",
+    "stat2Label": "Clientes Satisfeitos",
+    "stat3Value": "1000+",
+    "stat3Label": "Projetos Concluídos"
+  },
+  "services": {
+    "title": "Os Nossos Serviços",
+    "subtitle": "Soluções integradas para todas as necessidades do seu negócio em Angola",
+    "learnMore": "Saber Mais",
+    "viewAll": "Ver Todos os Serviços",
+    "agriculture": {
+      "title": "Produtos Agrícolas",
+      "description": "Sementes, fertilizantes, equipamentos e insumos para o campo angolano. Parceria com fornecedores certificados.",
+      "fullDescription": "A FICHE oferece uma gama completa de produtos agrícolas para apoiar a produção rural em Angola. Trabalhamos com sementes de alta qualidade, fertilizantes orgânicos e químicos, equipamentos modernos de irrigação e maquinaria agrícola. A nossa rede de fornecedores certificados garante produtos de confiança para o agricultor angolano."
+    },
+    "catering": {
+      "title": "Restauração",
+      "description": "Serviços de catering e restauração para eventos corporativos, casamentos e funcionamento diário.",
+      "fullDescription": "O nosso serviço de restauração cobre desde pequenos eventos corporativos até grandes celebrações. Com uma equipa de chefs experientes e ingredientes frescos de produção local, garantimos uma experiência gastronómica autêntica com sabores angolanos e internacionais."
+    },
+    "publicWorks": {
+      "title": "Obras Públicas",
+      "description": "Construção civil, reabilitação de infraestruturas e prestação de serviços de engenharia em todo o território.",
+      "fullDescription": "A divisão de obras públicas da FICHE executa projetos de construção civil, reabilitação de estradas, pontes e infraestruturas urbanas. Contamos com engenheiros qualificados, equipamentos modernos e experiência em projetos de pequena e grande escala em todo o território angolano."
+    },
+    "trade": {
+      "title": "Comércio Geral",
+      "description": "Distribuição e venda de produtos de consumo geral — parceiros fiáveis para retalhistas e grossistas.",
+      "fullDescription": "A nossa divisão de comércio geral oferece um catálogo amplo de produtos de consumo, desde géneros alimentares a artigos domésticos. Servimos retalhistas, grossistas e empresas em todo o país com eficiência logística e preços competitivos."
+    },
+    "maintenance": {
+      "title": "Manutenção",
+      "description": "Serviços de manutenção industrial, predial e de equipamentos para garantir a continuidade do negócio.",
+      "fullDescription": "Os nossos técnicos especializados prestam serviços de manutenção preventiva e corretiva para instalações industriais, edifícios comerciais e equipamentos. A continuidade operacional do seu negócio é a nossa prioridade."
+    },
+    "logistics": {
+      "title": "Logística",
+      "description": "Transporte e distribuição eficiente de mercadorias em Angola com frota própria e rede de parceiros.",
+      "fullDescription": "A FICHE dispõe de uma frota de veículos para transporte de carga em todo o território angolano. Com rotas estabelecidas entre as principais cidades e parceiros regionais, garantimos entregas eficientes, seguras e pontuais para qualquer ponto do país."
+    }
+  },
+  "stats": {
+    "years": "Anos de Experiência",
+    "clients": "Clientes Satisfeitos",
+    "areas": "Áreas de Atuação",
+    "projects": "Projetos Concluídos"
+  },
+  "about": {
+    "title": "Sobre a FICHE",
+    "subtitle": "Uma história de dedicação e crescimento ao serviço de Angola",
+    "story": "Fundada há mais de 15 anos, a FICHE nasceu com a missão de ser um parceiro de confiança para empresas e particulares em Angola. Com sede em Luanda e operações em todo o território nacional, crescemos para nos tornar uma referência em múltiplos setores.",
+    "mission": "A nossa missão é fornecer serviços integrados de alta qualidade que contribuam para o desenvolvimento económico de Angola e melhorem a qualidade de vida dos angolanos.",
+    "vision": "Ser a empresa angolana de referência na prestação de serviços diversificados, reconhecida pela excelência, integridade e impacto positivo na comunidade.",
+    "feature1": "Presença em todo o território nacional",
+    "feature2": "Equipa de profissionais qualificados",
+    "feature3": "Parceiros internacionais certificados",
+    "feature4": "Compromisso com a qualidade e inovação",
+    "cta": "Conhecer a Nossa História",
+    "valuesTitle": "Os Nossos Valores",
+    "value1Title": "Integridade",
+    "value1Desc": "Agimos com honestidade e transparência em todas as nossas relações.",
+    "value2Title": "Excelência",
+    "value2Desc": "Buscamos sempre superar as expectativas dos nossos clientes.",
+    "value3Title": "Inovação",
+    "value3Desc": "Adoptamos novas soluções para servir melhor Angola.",
+    "teamTitle": "A Nossa Equipa de Liderança",
+    "member1Name": "António Fiche",
+    "member1Role": "Fundador & CEO",
+    "member2Name": "Maria Santos",
+    "member2Role": "Directora de Operações",
+    "member3Name": "João Pereira",
+    "member3Role": "Director Financeiro",
+    "member4Name": "Carla Neto",
+    "member4Role": "Directora de Marketing"
+  },
+  "testimonials": {
+    "title": "O Que Dizem Os Nossos Clientes",
+    "subtitle": "A satisfação dos nossos clientes é a nossa maior conquista"
+  },
+  "cta": {
+    "title": "Pronto Para Trabalhar Connosco?",
+    "subtitle": "Entre em contacto com a nossa equipa e descubra como a FICHE pode ajudar o seu negócio a crescer.",
+    "primary": "Contactar Agora",
+    "secondary": "Ver Serviços"
+  },
+  "contact": {
+    "title": "Entre em Contacto",
+    "subtitle": "Estamos aqui para ajudar. Envie-nos uma mensagem e entraremos em contacto brevemente.",
+    "formTitle": "Envie-nos uma Mensagem",
+    "name": "Nome Completo",
+    "email": "Endereço de Email",
+    "phone": "Telefone (opcional)",
+    "subject": "Assunto",
+    "message": "Mensagem",
+    "send": "Enviar Mensagem",
+    "sending": "A enviar...",
+    "successTitle": "Mensagem Enviada!",
+    "successDesc": "Obrigado pelo seu contacto. Entraremos em contacto brevemente.",
+    "errorTitle": "Erro ao Enviar",
+    "errorDesc": "Ocorreu um erro ao enviar a sua mensagem. Por favor, tente novamente.",
+    "infoTitle": "Informações de Contacto",
+    "address": "Rua Marechal Brós Tito, Luanda, Angola",
+    "phoneNumber": "+244 923 000 000",
+    "emailAddress": "geral@fiche.ao",
+    "hours": "Segunda a Sexta: 08:00 - 17:00",
+    "followUs": "Siga-nos"
+  },
+  "footer": {
+    "tagline": "Soluções integradas para o crescimento de Angola",
+    "servicesTitle": "Serviços",
+    "companyTitle": "Empresa",
+    "contactTitle": "Contacto",
+    "aboutLink": "Sobre Nós",
+    "careersLink": "Carreiras",
+    "newsLink": "Novidades",
+    "partnersLink": "Parceiros",
+    "copyright": "© 2024 FICHE. Todos os direitos reservados.",
+    "address": "Luanda, Angola"
+  },
+  "admin": {
+    "login": {
+      "title": "Acesso Administrativo",
+      "subtitle": "Entre na sua conta para gerir o website",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Entrar",
+      "submitting": "A entrar...",
+      "error": "Email ou password incorretos. Por favor, tente novamente.",
+      "feature1": "Gestão de Serviços e Conteúdos",
+      "feature2": "Temas e Personalização Visual",
+      "feature3": "Mensagens e Contactos",
+      "feature4": "Registos de Auditoria"
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "welcome": "Bem-vindo de volta",
+      "totalMessages": "Total de Mensagens",
+      "unreadMessages": "Mensagens por Ler",
+      "activeServices": "Serviços Activos",
+      "totalTestimonials": "Testemunhos",
+      "recentMessages": "Mensagens Recentes",
+      "viewAll": "Ver Todas",
+      "noMessages": "Sem mensagens recentes",
+      "quickActions": "Acções Rápidas",
+      "manageServices": "Gerir Serviços",
+      "manageTheme": "Gerir Tema",
+      "viewAudit": "Ver Auditoria"
+    },
+    "services": {
+      "title": "Gerir Serviços",
+      "add": "Adicionar Serviço",
+      "edit": "Editar",
+      "delete": "Eliminar",
+      "active": "Activo",
+      "inactive": "Inactivo",
+      "save": "Guardar",
+      "cancel": "Cancelar",
+      "confirmDelete": "Tem a certeza que deseja eliminar este serviço?"
+    },
+    "theme": {
+      "title": "Personalização do Tema",
+      "colorPresets": "Presets de Cor",
+      "customColor": "Cor Personalizada",
+      "customColorPlaceholder": "#10913b",
+      "themeMode": "Modo do Tema",
+      "light": "Claro",
+      "dark": "Escuro",
+      "system": "Sistema",
+      "seasonalThemes": "Temas Sazonais",
+      "seasonalDesc": "Activar temas automáticos para datas especiais angolanas",
+      "preview": "Pré-visualização",
+      "save": "Guardar Alterações",
+      "saving": "A guardar...",
+      "saveSuccess": "Tema guardado com sucesso!",
+      "saveError": "Erro ao guardar o tema."
+    },
+    "audit": {
+      "title": "Registos de Auditoria",
+      "user": "Utilizador",
+      "action": "Acção",
+      "entity": "Entidade",
+      "date": "Data",
+      "noLogs": "Sem registos de auditoria"
+    },
+    "sidebar": {
+      "dashboard": "Dashboard",
+      "services": "Serviços",
+      "theme": "Tema",
+      "audit": "Auditoria",
+      "logout": "Sair",
+      "loggingOut": "A sair..."
+    }
+  }
+}

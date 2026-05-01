@@ -1,0 +1,211 @@
+{
+  "nav": {
+    "home": "首页",
+    "services": "服务",
+    "about": "关于我们",
+    "contact": "联系",
+    "contactCta": "联系我们"
+  },
+  "hero": {
+    "eyebrow": "🌍 值得信赖的安哥拉公司",
+    "title1": "为您的业务提供",
+    "title2": "完整解决方案",
+    "description": "从农业到餐饮，从公共工程到贸易——FICHE为安哥拉的企业和个人提供高质量、全方位的综合服务。",
+    "primaryCta": "查看我们的服务 →",
+    "secondaryCta": "关于FICHE",
+    "stat1Value": "15+",
+    "stat1Label": "年经验",
+    "stat2Value": "250+",
+    "stat2Label": "满意客户",
+    "stat3Value": "1000+",
+    "stat3Label": "完成项目"
+  },
+  "services": {
+    "title": "我们的服务",
+    "subtitle": "为您在安哥拉的所有业务需求提供综合解决方案",
+    "learnMore": "了解更多",
+    "viewAll": "查看所有服务",
+    "agriculture": {
+      "title": "农业产品",
+      "description": "为安哥拉农场提供种子、化肥、设备和农业投入品。与认证供应商合作。",
+      "fullDescription": "FICHE提供一系列完整的农业产品，支持安哥拉的农村生产。我们提供优质种子、有机和化学肥料、现代灌溉设备和农业机械。我们的认证供应商网络确保为安哥拉农民提供可靠的产品。"
+    },
+    "catering": {
+      "title": "餐饮服务",
+      "description": "为企业活动、婚礼和日常运营提供餐饮和餐厅服务。",
+      "fullDescription": "我们的餐饮服务涵盖从小型企业活动到大型庆典的一切。凭借经验丰富的厨师团队和新鲜的本地食材，我们保证提供正宗的安哥拉和国际美食体验。"
+    },
+    "publicWorks": {
+      "title": "公共工程",
+      "description": "全国范围内的民用建筑、基础设施修缮和工程服务。",
+      "fullDescription": "FICHE的公共工程部门执行民用建筑项目、道路修缮、桥梁和城市基础设施工程。我们拥有合格的工程师、现代设备，以及在安哥拉各地执行大小项目的丰富经验。"
+    },
+    "trade": {
+      "title": "综合贸易",
+      "description": "一般消费品的分销和销售——零售商和批发商的可靠合作伙伴。",
+      "fullDescription": "我们的综合贸易部门提供从食品到家居用品的广泛消费品目录。我们以高效的物流和具有竞争力的价格为全国各地的零售商、批发商和企业提供服务。"
+    },
+    "maintenance": {
+      "title": "维护服务",
+      "description": "工业、建筑和设备维护服务，确保业务连续性。",
+      "fullDescription": "我们的专业技术人员为工业设施、商业建筑和设备提供预防性和纠正性维护服务。您的业务运营连续性是我们的首要任务。"
+    },
+    "logistics": {
+      "title": "物流服务",
+      "description": "拥有自有车队和合作伙伴网络，在安哥拉高效运输和分发货物。",
+      "fullDescription": "FICHE拥有一支车队，可在安哥拉全境进行货物运输。凭借在主要城市之间建立的路线和区域合作伙伴，我们确保向全国任何地点提供高效、安全和准时的交付。"
+    }
+  },
+  "stats": {
+    "years": "年经验",
+    "clients": "满意客户",
+    "areas": "服务领域",
+    "projects": "完成项目"
+  },
+  "about": {
+    "title": "关于FICHE",
+    "subtitle": "服务安哥拉的奉献与成长故事",
+    "story": "FICHE成立于15年前，使命是成为安哥拉企业和个人值得信赖的合作伙伴。总部位于罗安达，业务遍及全国，我们已成为多个行业的标杆企业。",
+    "mission": "我们的使命是提供高质量的综合服务，为安哥拉的经济发展做出贡献，提高安哥拉人民的生活质量。",
+    "vision": "成为提供多元化服务的安哥拉标杆企业，以卓越、诚信和积极的社区影响力著称。",
+    "feature1": "覆盖全国各地",
+    "feature2": "合格专业人员团队",
+    "feature3": "认证国际合作伙伴",
+    "feature4": "致力于质量和创新",
+    "cta": "了解我们的历史",
+    "valuesTitle": "我们的价值观",
+    "value1Title": "诚信",
+    "value1Desc": "我们在所有关系中以诚实和透明的方式行事。",
+    "value2Title": "卓越",
+    "value2Desc": "我们始终致力于超越客户的期望。",
+    "value3Title": "创新",
+    "value3Desc": "我们采用新解决方案更好地服务安哥拉。",
+    "teamTitle": "我们的领导团队",
+    "member1Name": "安东尼奥·菲谢",
+    "member1Role": "创始人兼首席执行官",
+    "member2Name": "玛丽亚·桑托斯",
+    "member2Role": "运营总监",
+    "member3Name": "若昂·佩雷拉",
+    "member3Role": "财务总监",
+    "member4Name": "卡拉·内托",
+    "member4Role": "市场总监"
+  },
+  "testimonials": {
+    "title": "客户评价",
+    "subtitle": "客户满意是我们最大的成就"
+  },
+  "cta": {
+    "title": "准备好与我们合作了吗?",
+    "subtitle": "联系我们的团队，了解FICHE如何帮助您的业务发展。",
+    "primary": "立即联系",
+    "secondary": "查看服务"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "我们随时为您提供帮助。发送消息给我们，我们将尽快回复。",
+    "formTitle": "发送消息",
+    "name": "全名",
+    "email": "电子邮件地址",
+    "phone": "电话（可选）",
+    "subject": "主题",
+    "message": "消息",
+    "send": "发送消息",
+    "sending": "发送中...",
+    "successTitle": "消息已发送！",
+    "successDesc": "感谢您的联系。我们将尽快回复您。",
+    "errorTitle": "发送错误",
+    "errorDesc": "发送消息时出错。请重试。",
+    "infoTitle": "联系信息",
+    "address": "布罗斯·蒂托元帅街，罗安达，安哥拉",
+    "phoneNumber": "+244 923 000 000",
+    "emailAddress": "geral@fiche.ao",
+    "hours": "周一至周五：08:00 - 17:00",
+    "followUs": "关注我们"
+  },
+  "footer": {
+    "tagline": "为安哥拉发展提供综合解决方案",
+    "servicesTitle": "服务",
+    "companyTitle": "公司",
+    "contactTitle": "联系",
+    "aboutLink": "关于我们",
+    "careersLink": "职业机会",
+    "newsLink": "新闻",
+    "partnersLink": "合作伙伴",
+    "copyright": "© 2024 FICHE。保留所有权利。",
+    "address": "罗安达，安哥拉"
+  },
+  "admin": {
+    "login": {
+      "title": "管理员访问",
+      "subtitle": "登录您的账户以管理网站",
+      "email": "电子邮件",
+      "password": "密码",
+      "submit": "登录",
+      "submitting": "登录中...",
+      "error": "电子邮件或密码不正确。请重试。",
+      "feature1": "服务和内容管理",
+      "feature2": "主题和视觉定制",
+      "feature3": "消息和联系",
+      "feature4": "审计日志"
+    },
+    "dashboard": {
+      "title": "仪表板",
+      "welcome": "欢迎回来",
+      "totalMessages": "消息总数",
+      "unreadMessages": "未读消息",
+      "activeServices": "活跃服务",
+      "totalTestimonials": "推荐",
+      "recentMessages": "最近消息",
+      "viewAll": "查看全部",
+      "noMessages": "无最近消息",
+      "quickActions": "快速操作",
+      "manageServices": "管理服务",
+      "manageTheme": "管理主题",
+      "viewAudit": "查看审计"
+    },
+    "services": {
+      "title": "管理服务",
+      "add": "添加服务",
+      "edit": "编辑",
+      "delete": "删除",
+      "active": "活跃",
+      "inactive": "停用",
+      "save": "保存",
+      "cancel": "取消",
+      "confirmDelete": "您确定要删除此服务吗？"
+    },
+    "theme": {
+      "title": "主题定制",
+      "colorPresets": "颜色预设",
+      "customColor": "自定义颜色",
+      "customColorPlaceholder": "#10913b",
+      "themeMode": "主题模式",
+      "light": "浅色",
+      "dark": "深色",
+      "system": "系统",
+      "seasonalThemes": "季节性主题",
+      "seasonalDesc": "为安哥拉特殊日期启用自动主题",
+      "preview": "预览",
+      "save": "保存更改",
+      "saving": "保存中...",
+      "saveSuccess": "主题保存成功！",
+      "saveError": "保存主题时出错。"
+    },
+    "audit": {
+      "title": "审计日志",
+      "user": "用户",
+      "action": "操作",
+      "entity": "实体",
+      "date": "日期",
+      "noLogs": "无审计日志"
+    },
+    "sidebar": {
+      "dashboard": "仪表板",
+      "services": "服务",
+      "theme": "主题",
+      "audit": "审计",
+      "logout": "退出",
+      "loggingOut": "退出中..."
+    }
+  }
+}

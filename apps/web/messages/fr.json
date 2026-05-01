@@ -1,0 +1,211 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "about": "À propos",
+    "contact": "Contact",
+    "contactCta": "Nous Contacter"
+  },
+  "hero": {
+    "eyebrow": "🌍 Entreprise Angolaise de Confiance",
+    "title1": "Solutions Complètes pour",
+    "title2": "Votre Entreprise",
+    "description": "De l'agriculture à la restauration, des travaux publics au commerce — FICHE offre des services intégrés avec qualité et engagement pour les entreprises et les particuliers en Angola.",
+    "primaryCta": "Voir Nos Services →",
+    "secondaryCta": "À propos de FICHE",
+    "stat1Value": "15+",
+    "stat1Label": "Ans d'Expérience",
+    "stat2Value": "250+",
+    "stat2Label": "Clients Satisfaits",
+    "stat3Value": "1000+",
+    "stat3Label": "Projets Réalisés"
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Solutions intégrées pour tous vos besoins en Angola",
+    "learnMore": "En Savoir Plus",
+    "viewAll": "Voir Tous les Services",
+    "agriculture": {
+      "title": "Produits Agricoles",
+      "description": "Semences, engrais, équipements et intrants pour les exploitations agricoles angolaises.",
+      "fullDescription": "FICHE offre une gamme complète de produits agricoles pour soutenir la production rurale en Angola. Nous travaillons avec des semences de haute qualité, des engrais organiques et chimiques, des équipements d'irrigation modernes et des machines agricoles."
+    },
+    "catering": {
+      "title": "Restauration",
+      "description": "Services de restauration et traiteur pour événements d'entreprise, mariages et usage quotidien.",
+      "fullDescription": "Notre service de restauration couvre tout, des petits événements d'entreprise aux grandes célébrations. Avec une équipe de chefs expérimentés et des ingrédients frais d'origine locale, nous garantissons une expérience gastronomique authentique."
+    },
+    "publicWorks": {
+      "title": "Travaux Publics",
+      "description": "Construction civile, réhabilitation d'infrastructures et services d'ingénierie sur tout le territoire.",
+      "fullDescription": "La division travaux publics de FICHE exécute des projets de construction civile, de réhabilitation de routes, de ponts et d'infrastructures urbaines. Nous disposons d'ingénieurs qualifiés et d'équipements modernes."
+    },
+    "trade": {
+      "title": "Commerce Général",
+      "description": "Distribution et vente de produits de consommation générale — partenaires fiables pour les détaillants et grossistes.",
+      "fullDescription": "Notre division de commerce général offre un large catalogue de produits de consommation, des denrées alimentaires aux articles ménagers. Nous servons les détaillants, grossistes et entreprises dans tout le pays."
+    },
+    "maintenance": {
+      "title": "Maintenance",
+      "description": "Services de maintenance industrielle, immobilière et d'équipements pour assurer la continuité des activités.",
+      "fullDescription": "Nos techniciens spécialisés fournissent des services de maintenance préventive et corrective pour les installations industrielles, bâtiments commerciaux et équipements. La continuité opérationnelle de votre entreprise est notre priorité."
+    },
+    "logistics": {
+      "title": "Logistique",
+      "description": "Transport et distribution efficaces de marchandises en Angola avec flotte propre et réseau de partenaires.",
+      "fullDescription": "FICHE dispose d'une flotte de véhicules pour le transport de marchandises dans toute l'Angola. Avec des itinéraires établis entre les principales villes et des partenaires régionaux, nous garantissons des livraisons efficaces et ponctuelles."
+    }
+  },
+  "stats": {
+    "years": "Ans d'Expérience",
+    "clients": "Clients Satisfaits",
+    "areas": "Domaines d'Activité",
+    "projects": "Projets Réalisés"
+  },
+  "about": {
+    "title": "À propos de FICHE",
+    "subtitle": "Une histoire de dévouement et de croissance au service de l'Angola",
+    "story": "Fondée il y a plus de 15 ans, FICHE est née avec la mission d'être un partenaire de confiance pour les entreprises et les particuliers en Angola. Basée à Luanda avec des opérations dans tout le pays, nous sommes devenus une référence dans plusieurs secteurs.",
+    "mission": "Notre mission est de fournir des services intégrés de haute qualité qui contribuent au développement économique de l'Angola et améliorent la qualité de vie des Angolais.",
+    "vision": "Être l'entreprise angolaise de référence dans la prestation de services diversifiés, reconnue pour l'excellence, l'intégrité et l'impact positif sur la communauté.",
+    "feature1": "Présence sur tout le territoire national",
+    "feature2": "Équipe de professionnels qualifiés",
+    "feature3": "Partenaires internationaux certifiés",
+    "feature4": "Engagement envers la qualité et l'innovation",
+    "cta": "Découvrir Notre Histoire",
+    "valuesTitle": "Nos Valeurs",
+    "value1Title": "Intégrité",
+    "value1Desc": "Nous agissons avec honnêteté et transparence dans toutes nos relations.",
+    "value2Title": "Excellence",
+    "value2Desc": "Nous cherchons toujours à dépasser les attentes de nos clients.",
+    "value3Title": "Innovation",
+    "value3Desc": "Nous adoptons de nouvelles solutions pour mieux servir l'Angola.",
+    "teamTitle": "Notre Équipe de Direction",
+    "member1Name": "António Fiche",
+    "member1Role": "Fondateur & PDG",
+    "member2Name": "Maria Santos",
+    "member2Role": "Directrice des Opérations",
+    "member3Name": "João Pereira",
+    "member3Role": "Directeur Financier",
+    "member4Name": "Carla Neto",
+    "member4Role": "Directrice Marketing"
+  },
+  "testimonials": {
+    "title": "Ce Que Disent Nos Clients",
+    "subtitle": "La satisfaction de nos clients est notre plus grande réussite"
+  },
+  "cta": {
+    "title": "Prêt à Travailler Avec Nous?",
+    "subtitle": "Contactez notre équipe et découvrez comment FICHE peut aider votre entreprise à se développer.",
+    "primary": "Contacter Maintenant",
+    "secondary": "Voir les Services"
+  },
+  "contact": {
+    "title": "Nous Contacter",
+    "subtitle": "Nous sommes là pour vous aider. Envoyez-nous un message et nous vous répondrons rapidement.",
+    "formTitle": "Envoyez-nous un Message",
+    "name": "Nom Complet",
+    "email": "Adresse Email",
+    "phone": "Téléphone (optionnel)",
+    "subject": "Sujet",
+    "message": "Message",
+    "send": "Envoyer le Message",
+    "sending": "Envoi en cours...",
+    "successTitle": "Message Envoyé!",
+    "successDesc": "Merci pour votre contact. Nous vous répondrons prochainement.",
+    "errorTitle": "Erreur d'Envoi",
+    "errorDesc": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer.",
+    "infoTitle": "Informations de Contact",
+    "address": "Rua Marechal Brós Tito, Luanda, Angola",
+    "phoneNumber": "+244 923 000 000",
+    "emailAddress": "geral@fiche.ao",
+    "hours": "Lundi au Vendredi: 08:00 - 17:00",
+    "followUs": "Suivez-nous"
+  },
+  "footer": {
+    "tagline": "Solutions intégrées pour la croissance de l'Angola",
+    "servicesTitle": "Services",
+    "companyTitle": "Entreprise",
+    "contactTitle": "Contact",
+    "aboutLink": "À propos",
+    "careersLink": "Carrières",
+    "newsLink": "Actualités",
+    "partnersLink": "Partenaires",
+    "copyright": "© 2024 FICHE. Tous droits réservés.",
+    "address": "Luanda, Angola"
+  },
+  "admin": {
+    "login": {
+      "title": "Accès Administrateur",
+      "subtitle": "Connectez-vous pour gérer le site web",
+      "email": "Email",
+      "password": "Mot de passe",
+      "submit": "Se Connecter",
+      "submitting": "Connexion...",
+      "error": "Email ou mot de passe incorrect. Veuillez réessayer.",
+      "feature1": "Gestion des Services et Contenus",
+      "feature2": "Thèmes et Personnalisation Visuelle",
+      "feature3": "Messages et Contacts",
+      "feature4": "Journaux d'Audit"
+    },
+    "dashboard": {
+      "title": "Tableau de Bord",
+      "welcome": "Bon retour",
+      "totalMessages": "Total Messages",
+      "unreadMessages": "Messages Non Lus",
+      "activeServices": "Services Actifs",
+      "totalTestimonials": "Témoignages",
+      "recentMessages": "Messages Récents",
+      "viewAll": "Voir Tout",
+      "noMessages": "Aucun message récent",
+      "quickActions": "Actions Rapides",
+      "manageServices": "Gérer les Services",
+      "manageTheme": "Gérer le Thème",
+      "viewAudit": "Voir l'Audit"
+    },
+    "services": {
+      "title": "Gérer les Services",
+      "add": "Ajouter un Service",
+      "edit": "Modifier",
+      "delete": "Supprimer",
+      "active": "Actif",
+      "inactive": "Inactif",
+      "save": "Enregistrer",
+      "cancel": "Annuler",
+      "confirmDelete": "Êtes-vous sûr de vouloir supprimer ce service?"
+    },
+    "theme": {
+      "title": "Personnalisation du Thème",
+      "colorPresets": "Préréglages de Couleur",
+      "customColor": "Couleur Personnalisée",
+      "customColorPlaceholder": "#10913b",
+      "themeMode": "Mode du Thème",
+      "light": "Clair",
+      "dark": "Sombre",
+      "system": "Système",
+      "seasonalThemes": "Thèmes Saisonniers",
+      "seasonalDesc": "Activer les thèmes automatiques pour les dates spéciales angolaises",
+      "preview": "Aperçu",
+      "save": "Enregistrer les Modifications",
+      "saving": "Enregistrement...",
+      "saveSuccess": "Thème enregistré avec succès!",
+      "saveError": "Erreur lors de l'enregistrement du thème."
+    },
+    "audit": {
+      "title": "Journaux d'Audit",
+      "user": "Utilisateur",
+      "action": "Action",
+      "entity": "Entité",
+      "date": "Date",
+      "noLogs": "Aucun journal d'audit"
+    },
+    "sidebar": {
+      "dashboard": "Tableau de Bord",
+      "services": "Services",
+      "theme": "Thème",
+      "audit": "Audit",
+      "logout": "Déconnexion",
+      "loggingOut": "Déconnexion..."
+    }
+  }
+}
