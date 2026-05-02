@@ -1,4 +1,3 @@
-import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { AdminSidebar } from "@/components/AdminSidebar";
 import { NextIntlClientProvider } from "next-intl";
@@ -22,17 +21,21 @@ export default async function AdminLayout({
     const {
       data: { user },
     } = await supabase.auth.getUser();
-
-    if (!user) {
-      redirect(`/${locale}/admin/login`);
-    }
-
-    userEmail = user.email;
+    userEmail = user?.email;
   } catch {
-    redirect(`/${locale}/admin/login`);
+    // no session — middleware handles redirect for protected routes
   }
 
   const messages = await getMessages();
+
+  // No authenticated user → render children directly (login page, no sidebar)
+  if (!userEmail) {
+    return (
+      <NextIntlClientProvider messages={messages}>
+        {children}
+      </NextIntlClientProvider>
+    );
+  }
 
   return (
     <NextIntlClientProvider messages={messages}>
