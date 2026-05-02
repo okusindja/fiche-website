@@ -2,6 +2,7 @@
   "nav": {
     "home": "首页",
     "services": "服务",
+    "portfolio": "项目案例",
     "about": "关于我们",
     "contact": "联系",
     "contactCta": "联系我们"
@@ -202,11 +203,41 @@
     "sidebar": {
       "dashboard": "仪表板",
       "services": "服务",
+      "portfolio": "项目案例",
       "theme": "主题",
       "audit": "审计",
       "logout": "退出",
       "loggingOut": "退出中..."
     }
+  },
+  "portfolio": {
+    "title": "项目案例",
+    "subtitle": "我们在安哥拉的项目和成就",
+    "filterAll": "全部",
+    "filterAgriculture": "农业",
+    "filterCatering": "餐饮",
+    "filterPublicWorks": "公共工程",
+    "filterLogistics": "物流",
+    "filterTrade": "贸易",
+    "filterMaintenance": "维护",
+    "projectDetails": "项目详情",
+    "client": "客户",
+    "location": "地点",
+    "year": "年份",
+    "duration": "工期",
+    "category": "类别",
+    "gallery": "图片展示",
+    "relatedProjects": "相关项目",
+    "ctaTitle": "有项目想法？",
+    "ctaSubtitle": "联系我们，让我们一起合作。",
+    "ctaButton": "立即联系",
+    "viewProject": "查看项目",
+    "featuredTitle": "精选项目",
+    "featuredSubtitle": "我们在安哥拉最优质工作的精选",
+    "viewAll": "查看完整案例",
+    "adminTitle": "管理案例",
+    "addProject": "添加项目",
+    "noProjects": "暂无项目案例"
   },
   "seo": {
     "defaultTitle": "FICHE — 安哥拉贸易与服务公司",

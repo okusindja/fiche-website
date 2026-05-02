@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { ServiceCard } from "@/components/ServiceCard";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { HeroCarousel } from "@/components/HeroCarousel";
+import { PortfolioCard } from "@/components/PortfolioCard";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { createClient } from "@/lib/supabase/server";
 import type { Metadata } from "next";
@@ -163,6 +164,60 @@ const DEFAULT_TESTIMONIALS = [
   },
 ];
 
+const DEFAULT_FEATURED_PROJECTS = [
+  {
+    id: "f1",
+    slug: "projecto-agricola-malanje",
+    category: "agriculture",
+    title_pt: "Projecto Agrícola de Malanje",
+    title_en: "Malanje Agricultural Project",
+    title_fr: "Projet Agricole de Malanje",
+    title_zh: "马兰热农业项目",
+    cover_image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1200&q=80&auto=format&fit=crop",
+    location: "Malanje, Angola",
+    year: 2023,
+    featured: true,
+  },
+  {
+    id: "f2",
+    slug: "reabilitacao-estrada-huambo",
+    category: "public_works",
+    title_pt: "Reabilitação de Estrada — Huambo",
+    title_en: "Road Rehabilitation — Huambo",
+    title_fr: "Réhabilitation Routière — Huambo",
+    title_zh: "万博道路修缮项目",
+    cover_image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1200&q=80&auto=format&fit=crop",
+    location: "Huambo, Angola",
+    year: 2023,
+    featured: true,
+  },
+  {
+    id: "f3",
+    slug: "catering-conferencia-ua",
+    category: "catering",
+    title_pt: "Catering — Cimeira da União Africana",
+    title_en: "Catering — African Union Summit",
+    title_fr: "Restauration — Sommet de l'Union Africaine",
+    title_zh: "非洲联盟峰会餐饮服务",
+    cover_image: "https://images.unsplash.com/photo-1555244162-803834f70033?w=1200&q=80&auto=format&fit=crop",
+    location: "Luanda, Angola",
+    year: 2023,
+    featured: true,
+  },
+];
+
+type FeaturedProject = (typeof DEFAULT_FEATURED_PROJECTS)[0];
+
+function getFeaturedTitle(p: FeaturedProject, locale: string): string {
+  const map: Record<string, string> = {
+    pt: p.title_pt,
+    en: p.title_en,
+    fr: p.title_fr,
+    zh: p.title_zh,
+  };
+  return map[locale] || p.title_pt;
+}
+
 type ServiceRecord = (typeof DEFAULT_SERVICES)[0];
 type TestimonialRecord = (typeof DEFAULT_TESTIMONIALS)[0];
 
@@ -204,14 +259,16 @@ export default async function HomePage({ params }: PageProps) {
   const tc = await getTranslations("cta");
   const tstats = await getTranslations("stats");
   const tab = await getTranslations("about");
+  const tp = await getTranslations("portfolio");
 
   // Try to fetch from Supabase, fall back to defaults
   let services: ServiceRecord[] = DEFAULT_SERVICES;
   let testimonials: TestimonialRecord[] = DEFAULT_TESTIMONIALS;
+  let featuredProjects: FeaturedProject[] = DEFAULT_FEATURED_PROJECTS;
 
   try {
     const supabase = await createClient();
-    const [svRes, tmRes] = await Promise.all([
+    const [svRes, tmRes, fpRes] = await Promise.all([
       supabase
         .from("services")
         .select("*")
@@ -222,9 +279,17 @@ export default async function HomePage({ params }: PageProps) {
         .select("*")
         .eq("active", true)
         .order("sort_order"),
+      supabase
+        .from("portfolio_projects")
+        .select("id,slug,category,title_pt,title_en,title_fr,title_zh,cover_image,location,year,featured")
+        .eq("active", true)
+        .eq("featured", true)
+        .order("sort_order")
+        .limit(3),
     ]);
     if (svRes.data && svRes.data.length > 0) services = svRes.data;
     if (tmRes.data && tmRes.data.length > 0) testimonials = tmRes.data;
+    if (fpRes.data && fpRes.data.length > 0) featuredProjects = fpRes.data;
   } catch {
     // Use defaults
   }
@@ -350,10 +415,51 @@ export default async function HomePage({ params }: PageProps) {
           </div>
         </section>
 
-        {/* ── About Section ── */}
+        {/* ── Featured Projects Section ── */}
         <section
           className="py-20"
           style={{ backgroundColor: "#f8f9fa" }}
+        >
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl font-bold text-[#212829] dark:text-white mb-4">
+                {tp("featuredTitle")}
+              </h2>
+              <p className="text-[#868e96] max-w-xl mx-auto">{tp("featuredSubtitle")}</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {featuredProjects.map((project) => (
+                <PortfolioCard
+                  key={project.id}
+                  title={getFeaturedTitle(project, locale)}
+                  category={project.category}
+                  coverImage={project.cover_image}
+                  location={project.location}
+                  year={project.year}
+                  slug={project.slug}
+                  locale={locale}
+                  featured={false}
+                />
+              ))}
+            </div>
+
+            <div className="text-center mt-10">
+              <Link
+                href={`/${locale}/portfolio`}
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-white font-semibold transition-all"
+                style={{ backgroundColor: "rgb(var(--primary))" }}
+              >
+                {tp("viewAll")}
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* ── About Section ── */}
+        <section
+          className="py-20 bg-white dark:bg-slate-950"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

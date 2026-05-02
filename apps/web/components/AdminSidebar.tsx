@@ -9,6 +9,7 @@ import {
   Briefcase,
   Palette,
   ClipboardList,
+  LayoutGrid,
   LogOut,
   Menu,
   X,
@@ -37,6 +38,11 @@ export function AdminSidebar({ locale, userEmail }: AdminSidebarProps) {
       href: `/${locale}/admin/services`,
       label: t("services"),
       icon: Briefcase,
+    },
+    {
+      href: `/${locale}/admin/portfolio`,
+      label: t("portfolio"),
+      icon: LayoutGrid,
     },
     {
       href: `/${locale}/admin/theme`,

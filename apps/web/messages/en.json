@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "services": "Services",
+    "portfolio": "Portfolio",
     "about": "About Us",
     "contact": "Contact",
     "contactCta": "Contact Us"
@@ -202,11 +203,41 @@
     "sidebar": {
       "dashboard": "Dashboard",
       "services": "Services",
+      "portfolio": "Portfolio",
       "theme": "Theme",
       "audit": "Audit",
       "logout": "Logout",
       "loggingOut": "Logging out..."
     }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Our projects and achievements in Angola",
+    "filterAll": "All",
+    "filterAgriculture": "Agriculture",
+    "filterCatering": "Catering",
+    "filterPublicWorks": "Public Works",
+    "filterLogistics": "Logistics",
+    "filterTrade": "Trade",
+    "filterMaintenance": "Maintenance",
+    "projectDetails": "Project Details",
+    "client": "Client",
+    "location": "Location",
+    "year": "Year",
+    "duration": "Duration",
+    "category": "Category",
+    "gallery": "Image Gallery",
+    "relatedProjects": "Related Projects",
+    "ctaTitle": "Have a Project in Mind?",
+    "ctaSubtitle": "Get in touch and let's work together.",
+    "ctaButton": "Contact Us",
+    "viewProject": "View Project",
+    "featuredTitle": "Featured Projects",
+    "featuredSubtitle": "A selection of our best work in Angola",
+    "viewAll": "View Full Portfolio",
+    "adminTitle": "Manage Portfolio",
+    "addProject": "Add Project",
+    "noProjects": "No portfolio projects yet"
   },
   "seo": {
     "defaultTitle": "FICHE — Trade & Services in Angola",

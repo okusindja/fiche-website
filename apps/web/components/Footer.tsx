@@ -10,6 +10,7 @@ interface FooterProps {
 export async function Footer({ locale }: FooterProps) {
   const t = await getTranslations("footer");
   const ts = await getTranslations("services");
+  const tp = await getTranslations("portfolio");
 
   const services = [
     { key: "agriculture", slug: "produtos-agricolas" },
@@ -88,6 +89,14 @@ export async function Footer({ locale }: FooterProps) {
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link
+                  href={`/${locale}/portfolio`}
+                  className="text-sm text-slate-300 hover:text-white transition-colors"
+                >
+                  {tp("title")}
+                </Link>
+              </li>
             </ul>
           </div>
 

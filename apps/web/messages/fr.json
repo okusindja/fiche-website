@@ -2,6 +2,7 @@
   "nav": {
     "home": "Accueil",
     "services": "Services",
+    "portfolio": "Portfolio",
     "about": "À propos",
     "contact": "Contact",
     "contactCta": "Nous Contacter"
@@ -202,11 +203,41 @@
     "sidebar": {
       "dashboard": "Tableau de Bord",
       "services": "Services",
+      "portfolio": "Portfolio",
       "theme": "Thème",
       "audit": "Audit",
       "logout": "Déconnexion",
       "loggingOut": "Déconnexion..."
     }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Nos projets et réalisations en Angola",
+    "filterAll": "Tous",
+    "filterAgriculture": "Agriculture",
+    "filterCatering": "Restauration",
+    "filterPublicWorks": "Travaux Publics",
+    "filterLogistics": "Logistique",
+    "filterTrade": "Commerce",
+    "filterMaintenance": "Maintenance",
+    "projectDetails": "Détails du Projet",
+    "client": "Client",
+    "location": "Localisation",
+    "year": "Année",
+    "duration": "Durée",
+    "category": "Catégorie",
+    "gallery": "Galerie d'Images",
+    "relatedProjects": "Projets Connexes",
+    "ctaTitle": "Vous Avez un Projet en Tête?",
+    "ctaSubtitle": "Contactez-nous et travaillons ensemble.",
+    "ctaButton": "Nous Contacter",
+    "viewProject": "Voir le Projet",
+    "featuredTitle": "Projets en Vedette",
+    "featuredSubtitle": "Une sélection de nos meilleurs travaux en Angola",
+    "viewAll": "Voir le Portfolio Complet",
+    "adminTitle": "Gérer le Portfolio",
+    "addProject": "Ajouter un Projet",
+    "noProjects": "Aucun projet dans le portfolio"
   },
   "seo": {
     "defaultTitle": "FICHE — Commerce et Services en Angola",

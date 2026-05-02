@@ -7,6 +7,7 @@
   "nav": {
     "home": "Início",
     "services": "Serviços",
+    "portfolio": "Portfólio",
     "about": "Sobre Nós",
     "contact": "Contacto",
     "contactCta": "Contactar"
@@ -207,10 +208,40 @@
     "sidebar": {
       "dashboard": "Dashboard",
       "services": "Serviços",
+      "portfolio": "Portfólio",
       "theme": "Tema",
       "audit": "Auditoria",
       "logout": "Sair",
       "loggingOut": "A sair..."
     }
+  },
+  "portfolio": {
+    "title": "Portfólio",
+    "subtitle": "Os nossos projetos e realizações em Angola",
+    "filterAll": "Todos",
+    "filterAgriculture": "Agricultura",
+    "filterCatering": "Restauração",
+    "filterPublicWorks": "Obras Públicas",
+    "filterLogistics": "Logística",
+    "filterTrade": "Comércio",
+    "filterMaintenance": "Manutenção",
+    "projectDetails": "Detalhes do Projeto",
+    "client": "Cliente",
+    "location": "Localização",
+    "year": "Ano",
+    "duration": "Duração",
+    "category": "Categoria",
+    "gallery": "Galeria de Imagens",
+    "relatedProjects": "Projetos Relacionados",
+    "ctaTitle": "Tem um Projeto em Mente?",
+    "ctaSubtitle": "Entre em contacto connosco e vamos trabalhar juntos.",
+    "ctaButton": "Contactar Agora",
+    "viewProject": "Ver Projeto",
+    "featuredTitle": "Projetos em Destaque",
+    "featuredSubtitle": "Uma selecção dos nossos melhores trabalhos em Angola",
+    "viewAll": "Ver Portfólio Completo",
+    "adminTitle": "Gerir Portfólio",
+    "addProject": "Adicionar Projeto",
+    "noProjects": "Sem projetos no portfólio"
   }
 }
