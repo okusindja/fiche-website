@@ -5,8 +5,9 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
-import { Menu, X, Sun, Moon, Globe } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { FicheLogo } from "./FicheLogo";
 
 const LOCALES = ["pt", "en", "fr", "zh"] as const;
 
@@ -37,16 +38,8 @@ export function Navbar({ locale }: NavbarProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href={`/${locale}`} className="flex items-center gap-2 group">
-            <div
-              className="w-8 h-8 rounded-md flex items-center justify-center text-white font-bold text-sm"
-              style={{ backgroundColor: "rgb(var(--primary))" }}
-            >
-              F
-            </div>
-            <span className="text-xl font-bold text-[#212829] dark:text-white tracking-tight">
-              FICHE
-            </span>
+          <Link href={`/${locale}`} className="flex items-center group" aria-label="FICHE — Página inicial">
+            <FicheLogo variant="compact" width={110} textColor="currentColor" className="text-[#212829] dark:text-white transition-opacity group-hover:opacity-80" />
           </Link>
 
           {/* Desktop Nav */}

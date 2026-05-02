@@ -1,11 +1,28 @@
 import Link from "next/link";
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { CheckCircle, Target, Eye, Heart, Users, Globe2, Award } from "lucide-react";
+import { CheckCircle, Target, Eye, Heart, Globe2, Award } from "lucide-react";
+import type { Metadata } from "next";
 
 interface PageProps {
   params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "about" });
+  const ts = await getTranslations({ locale, namespace: "seo" });
+  return {
+    title: t("title"),
+    description: t("subtitle"),
+    keywords: ts("keywords"),
+    openGraph: {
+      title: `${t("title")} | FICHE Angola`,
+      description: t("subtitle"),
+    },
+  };
 }
 
 export default async function AboutPage({ params }: PageProps) {
@@ -69,19 +86,20 @@ export default async function AboutPage({ params }: PageProps) {
         <section className="py-20 bg-white dark:bg-slate-950">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div
-                className="rounded-2xl h-80 flex items-center justify-center"
-                style={{ backgroundColor: "rgb(var(--primary-light))" }}
-              >
-                <div className="text-center">
-                  <div className="text-7xl mb-4">🏢</div>
-                  <div
-                    className="text-xl font-bold"
-                    style={{ color: "rgb(var(--primary))" }}
-                  >
-                    FICHE
-                  </div>
-                  <div className="text-sm text-gray-500 mt-1">Est. 2009</div>
+              <div className="rounded-2xl h-80 overflow-hidden shadow-lg relative">
+                <Image
+                  src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=800&q=80&auto=format&fit=crop"
+                  alt="FICHE Angola — Nossa História"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+                <div
+                  className="absolute bottom-0 left-0 right-0 px-6 py-4"
+                  style={{ background: "linear-gradient(to top, rgba(10,40,20,0.7) 0%, transparent 100%)" }}
+                >
+                  <div className="text-white font-bold text-lg">FICHE Angola</div>
+                  <div className="text-white/70 text-sm">Est. 2009</div>
                 </div>
               </div>
               <div>

@@ -207,5 +207,10 @@
       "logout": "Logout",
       "loggingOut": "Logging out..."
     }
+  },
+  "seo": {
+    "defaultTitle": "FICHE — Trade & Services in Angola",
+    "defaultDescription": "FICHE is an Angolan multi-sector company with 15+ years in agricultural products, catering, public works, general trade, maintenance and logistics. Complete solutions for your business in Angola.",
+    "keywords": "FICHE Angola, Angola company, agricultural products Angola, catering Angola, public works Angola, general trade Angola, maintenance Angola, logistics Angola, Luanda"
   }
 }

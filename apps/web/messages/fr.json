@@ -207,5 +207,10 @@
       "logout": "Déconnexion",
       "loggingOut": "Déconnexion..."
     }
+  },
+  "seo": {
+    "defaultTitle": "FICHE — Commerce et Services en Angola",
+    "defaultDescription": "FICHE est une entreprise angolaise multi-sectorielle avec plus de 15 ans d expérience en produits agricoles, restauration, travaux publics, commerce général, maintenance et logistique.",
+    "keywords": "FICHE Angola, entreprise angola, produits agricoles angola, restauration angola, travaux publics angola, commerce angola, Luanda"
   }
 }

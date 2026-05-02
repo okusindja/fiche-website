@@ -1,14 +1,27 @@
 import Link from "next/link";
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ServiceCard } from "@/components/ServiceCard";
 import { TestimonialCard } from "@/components/TestimonialCard";
+import { HeroCarousel } from "@/components/HeroCarousel";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { createClient } from "@/lib/supabase/server";
+import type { Metadata } from "next";
 
 interface PageProps {
   params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "seo" });
+  return {
+    title: t("defaultTitle"),
+    description: t("defaultDescription"),
+    keywords: t("keywords"),
+  };
 }
 
 const DEFAULT_SERVICES = [
@@ -216,108 +229,64 @@ export default async function HomePage({ params }: PageProps) {
     // Use defaults
   }
 
+  // Hero carousel slides
+  const heroSlides = [
+    {
+      id: 1,
+      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1600&q=80&auto=format&fit=crop",
+      badge: t("eyebrow"),
+      title: t("title1"),
+      subtitle: t("title2"),
+      description: t("description"),
+      cta: t("primaryCta"),
+      ctaLink: "/services",
+      ctaSecondary: t("secondaryCta"),
+      ctaSecondaryLink: "/about",
+    },
+    {
+      id: 2,
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80&auto=format&fit=crop",
+      badge: "🏗️ Obras Públicas & Construção",
+      title: "Infraestrutura de",
+      subtitle: "Qualidade Superior",
+      description: "Construção civil, reabilitação de estradas e infraestruturas urbanas com engenheiros qualificados e equipamentos modernos.",
+      cta: t("primaryCta"),
+      ctaLink: "/services",
+      ctaSecondary: t("secondaryCta"),
+      ctaSecondaryLink: "/about",
+    },
+    {
+      id: 3,
+      image: "https://images.unsplash.com/photo-1555244162-803834f70033?w=1600&q=80&auto=format&fit=crop",
+      badge: "🍽️ Restauração & Catering",
+      title: "Gastronomia Autêntica",
+      subtitle: "Com Sabor Angolano",
+      description: "Serviços de catering para eventos corporativos, casamentos e celebrações com ingredientes frescos e chefs experientes.",
+      cta: t("primaryCta"),
+      ctaLink: "/services",
+      ctaSecondary: t("secondaryCta"),
+      ctaSecondaryLink: "/about",
+    },
+    {
+      id: 4,
+      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600&q=80&auto=format&fit=crop",
+      badge: "📦 Logística & Distribuição",
+      title: "Distribuição Eficiente",
+      subtitle: "Por Todo o País",
+      description: "Transporte e distribuição de mercadorias com frota própria e rede de parceiros em todas as províncias de Angola.",
+      cta: t("primaryCta"),
+      ctaLink: "/services",
+      ctaSecondary: t("secondaryCta"),
+      ctaSecondaryLink: "/about",
+    },
+  ];
+
   return (
     <>
       <Navbar locale={locale} />
       <main>
-        {/* ── Hero Section ── */}
-        <section
-          className="min-h-[90vh] flex items-center"
-          style={{ backgroundColor: "#f8f9fa" }}
-        >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Left */}
-              <div>
-                {/* Eyebrow badge */}
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-medium mb-6 border"
-                  style={{
-                    backgroundColor: "rgb(var(--primary-light))",
-                    color: "rgb(var(--primary))",
-                    borderColor: "rgba(var(--primary) / 0.3)",
-                  }}
-                >
-                  {t("eyebrow")}
-                </div>
-
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#212829] leading-tight mb-6">
-                  {t("title1")}{" "}
-                  <span style={{ color: "rgb(var(--primary))" }}>
-                    {t("title2")}
-                  </span>
-                </h1>
-
-                <p className="text-lg text-[#868e96] leading-relaxed mb-8 max-w-xl">
-                  {t("description")}
-                </p>
-
-                <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                  <Link
-                    href={`/${locale}/services`}
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg text-white font-semibold text-sm transition-all"
-                    style={{ backgroundColor: "rgb(var(--primary))" }}
-                  >
-                    {t("primaryCta")}
-                  </Link>
-                  <Link
-                    href={`/${locale}/about`}
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg font-semibold text-sm border-2 transition-all"
-                    style={{
-                      borderColor: "rgb(var(--primary))",
-                      color: "rgb(var(--primary))",
-                    }}
-                  >
-                    {t("secondaryCta")}
-                  </Link>
-                </div>
-
-                {/* Trust stats row */}
-                <div className="flex flex-wrap gap-8">
-                  {[
-                    { value: t("stat1Value"), label: t("stat1Label") },
-                    { value: t("stat2Value"), label: t("stat2Label") },
-                    { value: t("stat3Value"), label: t("stat3Label") },
-                  ].map((stat, i) => (
-                    <div key={i}>
-                      <div
-                        className="text-2xl font-bold"
-                        style={{ color: "rgb(var(--primary))" }}
-                      >
-                        {stat.value}
-                      </div>
-                      <div className="text-xs text-[#868e96] font-medium">
-                        {stat.label}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Right — image placeholder */}
-              <div className="hidden lg:flex items-center justify-center">
-                <div
-                  className="w-full max-w-md h-96 rounded-2xl flex items-center justify-center relative overflow-hidden shadow-2xl"
-                  style={{ backgroundColor: "rgb(var(--primary))" }}
-                >
-                  {/* Decorative circles */}
-                  <div
-                    className="absolute top-0 right-0 w-48 h-48 rounded-full opacity-20"
-                    style={{ backgroundColor: "rgb(var(--primary-dark))" }}
-                  />
-                  <div
-                    className="absolute bottom-0 left-0 w-32 h-32 rounded-full opacity-20"
-                    style={{ backgroundColor: "rgb(var(--primary-dark))" }}
-                  />
-                  <div className="relative text-center text-white px-8">
-                    <div className="text-6xl mb-4">🇦🇴</div>
-                    <div className="text-2xl font-bold mb-2">FICHE</div>
-                    <div className="text-sm opacity-80">Angola</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* ── Hero Carousel ── */}
+        <HeroCarousel slides={heroSlides} locale={locale} />
 
         {/* ── Services Section ── */}
         <section className="py-20 bg-white dark:bg-slate-950">
@@ -388,21 +357,23 @@ export default async function HomePage({ params }: PageProps) {
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Left placeholder */}
+              {/* Left — real photo */}
               <div className="hidden lg:block">
-                <div
-                  className="w-full h-96 rounded-2xl flex items-center justify-center"
-                  style={{ backgroundColor: "rgb(var(--primary-light))" }}
-                >
-                  <div className="text-center">
-                    <div className="text-6xl mb-4">🏢</div>
-                    <div
-                      className="text-lg font-semibold"
-                      style={{ color: "rgb(var(--primary))" }}
-                    >
-                      FICHE Angola
-                    </div>
-                  </div>
+                <div className="w-full h-96 rounded-2xl overflow-hidden shadow-xl relative">
+                  <Image
+                    src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80&auto=format&fit=crop"
+                    alt="Equipa FICHE Angola"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
+                  <div
+                    className="absolute inset-0"
+                    style={{
+                      background:
+                        "linear-gradient(135deg, rgba(var(--primary),0.25) 0%, transparent 60%)",
+                    }}
+                  />
                 </div>
               </div>
 

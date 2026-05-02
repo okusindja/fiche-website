@@ -4,9 +4,25 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { MapPin, Phone, Mail, Clock, Linkedin, Facebook, Instagram } from "lucide-react";
 import { ContactForm } from "./ContactForm";
+import type { Metadata } from "next";
 
 interface PageProps {
   params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "contact" });
+  const ts = await getTranslations({ locale, namespace: "seo" });
+  return {
+    title: t("title"),
+    description: t("subtitle"),
+    keywords: ts("keywords"),
+    openGraph: {
+      title: `${t("title")} | FICHE Angola`,
+      description: t("subtitle"),
+    },
+  };
 }
 
 export default async function ContactPage({ params }: PageProps) {

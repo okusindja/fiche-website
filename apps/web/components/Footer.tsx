@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import { MapPin, Phone, Mail, Clock, Linkedin, Facebook, Instagram, Twitter } from "lucide-react";
+import { FicheLogo } from "./FicheLogo";
 
 interface FooterProps {
   locale: string;
@@ -26,13 +27,7 @@ export async function Footer({ locale }: FooterProps) {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Link href={`/${locale}`} className="flex items-center gap-2 mb-4">
-              <div
-                className="w-9 h-9 rounded-md flex items-center justify-center text-white font-bold"
-                style={{ backgroundColor: "rgb(var(--primary))" }}
-              >
-                F
-              </div>
-              <span className="text-xl font-bold tracking-tight">FICHE</span>
+              <FicheLogo variant="full" width={180} textColor="white" />
             </Link>
             <p className="text-sm text-slate-400 leading-relaxed mb-6">
               {t("tagline")}

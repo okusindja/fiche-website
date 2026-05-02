@@ -4,9 +4,25 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { createClient } from "@/lib/supabase/server";
 import { ArrowRight, CheckCircle } from "lucide-react";
+import type { Metadata } from "next";
 
 interface PageProps {
   params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "services" });
+  const ts = await getTranslations({ locale, namespace: "seo" });
+  return {
+    title: t("title"),
+    description: t("subtitle"),
+    keywords: ts("keywords"),
+    openGraph: {
+      title: `${t("title")} | FICHE Angola`,
+      description: t("subtitle"),
+    },
+  };
 }
 
 const DEFAULT_SERVICES = [
